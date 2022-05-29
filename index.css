@@ -37,15 +37,31 @@ h1 span {
   font-weight: 700;
 }
 
+#email-form i{
+  display: none;
+  margin: auto;
+  margin-top: 10px;
+  color: #FF4868;
+  font-size: 13px;
+}
+
+#email-form div{
+  display: flex;
+  flex-direction: column;
+}
+
 #email {
   box-sizing: border-box;
   padding-left: 25px;
-  margin: auto;
-  margin-top: 20px;
   width: 100%;
   height: 40px;
   border-radius: 30px;
   border: #b8cafb 2px solid;
+}
+
+#email:focus{
+  border: #b8cafb 2px solid;
+  outline: none;
 }
 
 #email::placeholder {
@@ -61,6 +77,17 @@ button {
   background-color: #4d7bf4;
   border: #4d7bf4 2px solid;
   font-weight: 600;
+  box-shadow: 2px 4px 8px 3px #cfd7f0;
+}
+
+button:hover{
+  background-color: #668cec;
+  border: #8ca8ed 2px solid;
+}
+
+button:active{
+  background-color: #4d7bf4;
+  border: #4d7bf4 2px solid;
 }
 
 .social-btn-group {
@@ -73,10 +100,18 @@ button {
 
 .social-btn-group a {
   display: block;
-  border: 1px #4d7bf4 solid;
+  border: 1px #cbd3e7c2 solid;
   border-radius: 50px;
 }
 
+.social-btn-group a:hover{
+  background-color: #4d7bf4;
+  border: 1px #4d7bf4 solid;
+}
+
+.social-btn-group a:hover  .fab {
+  color: white;
+}
 .footer,
 .sub-title {
   font-size: 12px;
@@ -119,10 +154,20 @@ button {
     font-size: 40px;
   }
   #email-form {
+    justify-content: space-between;
     flex-direction: row;
   }
-  #email {
-    width: 70%;
+  #email-form div{
+    width:70%;
+  }
+  #email-form i{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  #email{
+    margin-top: 0px;
+    width: 100%;
   }
   button {
     width: 28%;

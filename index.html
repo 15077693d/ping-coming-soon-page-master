@@ -25,9 +25,12 @@
       <img id="logo" src="./images/logo.svg" />
       <h1>We are launching <span>soon!</span></h1>
       <h2 class="sub-title">Subscribe and get notified</h2>
-      <form id="email-form">
-        <input id="email" type="email" placeholder="Your email address..." />
-        <button type="submit">Notify Me</button>
+      <form id="email-form" onsubmit="return false">
+        <div>
+          <input id="email" placeholder="Your email address..." />
+          <i id="warning">Please provide a vaild email address</i>
+        </div>
+        <button id="submit-btn" type="submit">Notify Me</button>
       </form>
       <img id="illustration" src="images/illustration-dashboard.png" />
       <div class="social-btn-group">
@@ -37,5 +40,6 @@
       </div>
       <h2 class="footer">©Copyright Ping. All rights reserved</h2>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
